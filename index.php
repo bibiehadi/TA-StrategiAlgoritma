@@ -38,6 +38,9 @@
   </table>
   <?php 
     $graph->dfsMatrix(3); 
+    echo "<h5>"; 
+    $graph->getGraphColor();
+    echo "</h5>";
   ?>
 </body>
 </html>
