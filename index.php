@@ -23,7 +23,7 @@
   <table style="text-align: center;margin: 10px" border="1" >
     <tr>
       <th>#</th>
-      <?php for ($i=1; $i <= count($node) ; $i++) { 
+      <?php for ($i=0; $i < count($node) ; $i++) { 
         echo "<th> node ".$i."</th>";
       } ?>     
     </tr>
@@ -36,5 +36,8 @@
       echo "</tr>";
     } ?>
   </table>
+  <?php 
+    $graph->dfsMatrix(3); 
+  ?>
 </body>
 </html>
