@@ -37,7 +37,7 @@
     } ?>
   </table>
   <?php 
-    $graph->dfsMatrix(3); 
+    $graph->dfsColoringMatrix(0); 
     echo "<h5>"; 
     $graph->getGraphColor();
     echo "</h5>";
